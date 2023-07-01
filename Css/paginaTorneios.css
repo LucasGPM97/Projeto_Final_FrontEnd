@@ -1,0 +1,87 @@
+:root {
+    --main-color: #2C1D4B;
+    --background-color: #404040;
+    --link-color: #666666;
+    --text1: #999999;
+    --highligth-text: #333333;
+    --input-text: #555555;
+    --white-color: #FFFFFF;
+    --point-list: #CCCCCC;
+    --line-input: #D9D9D9;
+  }
+  @font-face {
+    font-family: Inter;
+    src: url(../font/rodape/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+*{
+    margin: 0;
+}
+.container-campeonatos{
+    width: 100%;
+    position: relative;
+    display: grid;
+}
+
+#filtro-campeonatos{
+    max-width: 100%;
+    color: var(--white-color);
+    position: relative;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding-bottom: 2%;
+    left: 30px;
+    height: 100px;
+}
+#cards-torneios{
+    display: grid;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 40px;
+    height: 500px;
+}
+#cards-group {
+    top: 80px;
+    right: 5px;
+    width: 400px;
+    position: absolute;
+  }
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 150px;
+    text-align: center;
+    background-color: var(--highligth-text);
+    color: var(--white-color);
+  }
+  .datas{
+    display: flex;
+    justify-content: space-between;
+  }
+  #legend-card{
+    width: 80px;
+    color: black;
+    font-size: 10px;
+    padding: 0%;
+    color: var(--white-color);
+    align-self: end;
+  }
+  .text-card{
+    display: flex;
+    justify-content:space-between;
+    font-size: 22px;
+  }
+  #search{
+    width: 80%;
+    height: 30px;
+  }
+  
+.card:hover{
+  scale: 1.05;
+  transition: .3s;
+  border: 1px var(--black-color) solid;
+  box-shadow: 0px 0px 5px var(--main-color);
+}
