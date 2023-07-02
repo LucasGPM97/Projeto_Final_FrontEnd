@@ -33,6 +33,10 @@
     left: 30px;
     height: 100px;
 }
+
+#principais-campeonatos{
+  margin-top: 10%;
+}
 #cards-torneios{
     display: grid;
     position: relative;
@@ -44,7 +48,7 @@
     right: 5px;
     width: 400px;
     position: absolute;
-  }
+}
 .card{
     display: flex;
     flex-direction: column;
@@ -55,6 +59,9 @@
     text-align: center;
     background-color: var(--highligth-text);
     color: var(--white-color);
+  }
+  .card-body{
+    height: 120px;
   }
   .datas{
     display: flex;
@@ -83,4 +90,33 @@
   transition: .3s;
   border: 1px var(--black-color) solid;
   box-shadow: 0px 0px 5px var(--main-color);
+}
+
+@media (max-width: 1397px) {
+  #filtro-campeonatos{
+    height: auto;
+    margin: auto;
+  }
+  #cards-torneios{
+    margin: auto;
+  }
+  .card-body{
+    height: 175px;
+  }
+  .card{
+    height: auto;
+  }
+}
+@media (max-width: 969px) {
+  .card-body{
+    height: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .card-body{
+    height: auto;
+  }  
+  #cards-torneios{
+    margin-top: 15%;
+  }
 }
