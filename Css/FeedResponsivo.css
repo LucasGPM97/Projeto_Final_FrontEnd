@@ -171,6 +171,14 @@
     background-image: url(../IMG/Feed/nrg.jpeg);
     background-size: cover;
   }
+  .c-item{
+    height: 300px;
+  }
+  .c-img{
+    height: 100%;
+    object-fit: cover;
+  }
+
   /*
   Responsividade
   */
@@ -184,6 +192,9 @@
     .feed-notice1{
       left:10%;
     }
+    #carouselExampleIndicators{
+      width: 75%;
+    }
   }
   @media (max-width: 1024px) {
     .feed-notice2{
@@ -191,5 +202,18 @@
     }
     .feed-notice1{
       left:25%;
+    }
+    #carouselExampleIndicators{
+      width: 75%;
+    }
+  }
+  @media (max-width: 1000px) {
+    #carouselExampleIndicators{
+      width: 100%;
+    }
+  }
+  @media (max-width: 690px) {
+    #carouselExampleIndicators{
+      display: none;
     }
   }
