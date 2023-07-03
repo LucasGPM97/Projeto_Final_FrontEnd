@@ -19,18 +19,26 @@
         <nav class="nav-bar">
             <div class="logo">
                 <a href="../index.html">
-                    <img style="padding: 6px;" src="../IMG/Cabecalho/Logo White.png" alt="" width="60px ">
+                    <img src="../IMG/Cabecalho/Logo White.png" alt="" width="60px ">
                 </a>
-                <!-- <h2 style="color: #fff; margin: auto;">Torneios</h2> -->
+                <h2 class="fs-5" style="color: #fff; margin: auto; width: 10px;">Torneios</h2>
             </div>
 
             <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="paginaTransmissoes.html" class="nav-link">Transmissões</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Torneios</a></li>
+                    <!-- <li class="nav-item"><a href="paginaTorneios.html" class="nav-link">Torneios</a></li> -->
                     <input type="text" name="search" id="searchD" placeholder="Pesquisar">
                     <i id="lupa-desktop" class="fa-solid fa-magnifying-glass"></i>
                 </ul>
+
+                <!--
+                <div id="user-icon-desktop">
+                    <img class="user-icon" src="assets/img/User.png" alt="" width="64px">
+                </div>
+
+-->
+
                 <div class="dropdown">
                     <div id="user-icon-desktop">
                         <img class="user-icon" src="../IMG/Cabecalho/User.png" alt="" width="64px">
@@ -47,8 +55,7 @@
 
             </div>
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="../IMG/Cabecalho/menu_white_36dp.svg"
-                        alt=""></button>
+                <button onclick="menuShow()"><img class="icon" src="../IMG/Cabecalho/menu_white_36dp.svg" alt=""></button>
             </div>
         </nav>
 
@@ -56,7 +63,7 @@
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="paginaTransmissoes.html" class="nav-link">Transmissões</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Torneios</a></li>
+                <!-- <li class="nav-item"><a href="paginaTorneios.html" class="nav-link">Torneios</a></li> -->
                 <input type="text" name="search" id="searchM" placeholder="Pesquisar">
                 <i id="lupa-mobile" class="fa-solid fa-magnifying-glass"></i>
                 <div class="dropdown">
@@ -184,7 +191,7 @@
                                             </a>
                                         </div>
                                         <div class="container-form-btn" style="margin-bottom: 10px;
-                        padding-bottom: 15px; ;border-bottom: 2px solid var(--line-input);">
+                          padding-bottom: 15px; ;border-bottom: 2px solid var(--line-input);">
                                         </div>
                                         <div class="container-form-btn">
                                             <button class="login-form-btn">
@@ -207,9 +214,10 @@
                 </div>
             </div>
         </div>
+
+
     </header>
 
-    <script src="../Css/script.js"></script>
     <main>
 
         <div class="container-fluid">
@@ -434,6 +442,7 @@
         </div>
     </footer>
 
+    <script src="../Css/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
